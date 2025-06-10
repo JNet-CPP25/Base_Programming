@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 enum class Months {
 	January = 1,
@@ -20,7 +20,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	int month{};
 	do {
-		std::cout << "Ââåäèòå íîìåð ìåñÿöà îò 1 äî 12: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð° Ð¾Ñ‚ 1 Ð´Ð¾ 12: ";
 		std::cin >> month;
 
 		Months monthCurrent{ static_cast<Months>(month) };
@@ -28,48 +28,48 @@ int main()
 		switch (monthCurrent)
 		{
 		case Months::January:
-			std::cout << "ßíâàðü \n" << std::endl;
+			std::cout << "Ð¯Ð½Ð²Ð°Ñ€ÑŒ \n" << std::endl;
 			break;
 		case Months::February:
-			std::cout << "Ôåâðàëü \n" << std::endl;
+			std::cout << "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ \n" << std::endl;
 			break;
 		case Months::March:
-			std::cout << "Ìàðò \n" << std::endl;
+			std::cout << "ÐœÐ°Ñ€Ñ‚ \n" << std::endl;
 			break;
 		case Months::April:
-			std::cout << "Àïðåëü \n" << std::endl;
+			std::cout << "ÐÐ¿Ñ€ÐµÐ»ÑŒ \n" << std::endl;
 			break;
 		case Months::May:
-			std::cout << "Ìàé \n" << std::endl;
+			std::cout << "ÐœÐ°Ð¹ \n" << std::endl;
 			break;
 		case Months::June:
-			std::cout << "Èþíü \n" << std::endl;
+			std::cout << "Ð˜ÑŽÐ½ÑŒ \n" << std::endl;
 			break;
 		case Months::July:
-			std::cout << "Èþëü \n" << std::endl;
+			std::cout << "Ð˜ÑŽÐ»ÑŒ \n" << std::endl;
 			break;
 		case Months::August:
-			std::cout << "Àâãóñò \n" << std::endl;
+			std::cout << "ÐÐ²Ð³ÑƒÑÑ‚ \n" << std::endl;
 			break;
 		case Months::September:
-			std::cout << "Ñåíòÿáðü \n" << std::endl;
+			std::cout << "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ \n" << std::endl;
 			break;
 		case Months::October:
-			std::cout << "Îêòÿáðü \n" << std::endl;
+			std::cout << "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ \n" << std::endl;
 			break;
 		case Months::November:
-			std::cout << "Íîÿáðü \n" << std::endl;
+			std::cout << "ÐÐ¾ÑÐ±Ñ€ÑŒ \n" << std::endl;
 			break;
 		case Months::December:
-			std::cout << "Äåêàáðü \n" << std::endl;
+			std::cout << "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ \n" << std::endl;
 			break;
 
 		default:
-			if (month != 0) { std::cout << "\nÍåïðàâèëüíûé íîìåð! \n" << std::endl; }
+			if (month != 0) { std::cout << "\nÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€! \n" << std::endl; }
 			break;
 		}
 	} while (month != 0);
-	std::cout << "Äî ñâèäàíèÿ" << std::endl;
+	std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ" << std::endl;
 
 
 }
