@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enum", "Base_Programming\Ba
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Struct", "Struct\Struct.vcxproj", "{729EA196-7E78-43AD-A381-0929D7E3587C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutputStruct", "OutputStruct\OutputStruct.vcxproj", "{DE561B64-EF99-4E63-8A83-3A02E501E94C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{729EA196-7E78-43AD-A381-0929D7E3587C}.Release|x64.Build.0 = Release|x64
 		{729EA196-7E78-43AD-A381-0929D7E3587C}.Release|x86.ActiveCfg = Release|Win32
 		{729EA196-7E78-43AD-A381-0929D7E3587C}.Release|x86.Build.0 = Release|Win32
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Debug|x64.ActiveCfg = Debug|x64
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Debug|x64.Build.0 = Debug|x64
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Debug|x86.Build.0 = Debug|Win32
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Release|x64.ActiveCfg = Release|x64
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Release|x64.Build.0 = Release|x64
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Release|x86.ActiveCfg = Release|Win32
+		{DE561B64-EF99-4E63-8A83-3A02E501E94C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
