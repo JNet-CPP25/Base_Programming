@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 
 struct PostAddress
@@ -10,15 +10,16 @@ struct PostAddress
 	int index{};
 };
 
+
 void printAddress(PostAddress& address);
 
 int main()
 {
 	setlocale(LC_CTYPE, "rus");
 
-	PostAddress addressOne{ "Новый Уренгой", "Буровиков проезд", "25/1", 30, 170000 };
-	PostAddress addressTwo{ "Москва", "Арбат", "12", 8, 123456 };
-	PostAddress addressThree{ "Ижевск", "Пушкина", "59", 143, 953769 };
+	PostAddress addressOne{ "РќРѕРІС‹Р№ РЈСЂРµРЅРіРѕР№", "Р‘СѓСЂРѕРІРёРєРѕРІ РїСЂРѕРµР·Рґ", "25/1", 30, 170000 };
+	PostAddress addressTwo{ "РњРѕСЃРєРІР°", "РђСЂР±Р°С‚", "12", 8, 123456 };
+	PostAddress addressThree{ "РР¶РµРІСЃРє", "РџСѓС€РєРёРЅР°", "59", 143, 953769 };
 
 	printAddress(addressOne);
 	printAddress(addressTwo);
@@ -28,10 +29,10 @@ int main()
 
 void printAddress(PostAddress& address)
 {
-	std::cout << "Город: " << address.city << std::endl;
-	std::cout << "Улица: " << address.street << std::endl;
-	std::cout << "Номер дома: " << address.numberHouse << std::endl;
-	std::cout << "Номер квартиры: " << address.numberApartment << std::endl;
-	std::cout << "Индекс: " << address.index << std::endl;
+	std::cout << "Р“РѕСЂРѕРґ: " << address.city << std::endl;
+	std::cout << "РЈР»РёС†Р°: " << address.street << std::endl;
+	std::cout << "РќРѕРјРµСЂ РґРѕРјР°: " << address.numberHouse << std::endl;
+	std::cout << "РќРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹: " << address.numberApartment << std::endl;
+	std::cout << "РРЅРґРµРєСЃ: " << address.index << std::endl;
 	std::cout << std::endl;
 }
