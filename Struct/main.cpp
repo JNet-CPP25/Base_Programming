@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <windows.h>
 
@@ -25,22 +25,22 @@ int main()
 	bankAccount client;
 	float newBalans{};
 
-	std::cout << "Ââåäèòå íîìåð ñ÷åòà : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÑ‡ÐµÑ‚Ð° : ";
 	std::cin >> client.number;
-	std::cout << "Ââåäèòå èìÿ âëàäåëüöà : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð° : ";
 
-	//std::getline(client.number, );
+
 	std::getline(std::cin >> std::ws, client.name);
-	std::cout << "Ââåäèòå áàëàíñ : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±Ð°Ð»Ð°Ð½Ñ : ";
 	std::cin >> client.balans;
 
-	//std::cout << "Âàø ñ÷åò : " << client.name << ", " << client.number << ", " << client.balans << std::endl;
+	//std::cout << "Ð’Ð°Ñˆ ÑÑ‡ÐµÑ‚ : " << client.name << ", " << client.number << ", " << client.balans << std::endl;
 
-	std::cout << "Ââåäèòå íîâûé áàëàíñ : ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ Ð±Ð°Ð»Ð°Ð½Ñ : ";
 	std::cin >> newBalans;
 	client = changeBalans(client, newBalans);
 
-	std::cout << "Âàø ñ÷åò: " << client.name << ", " << client.number << ", " << client.balans << std::endl;
+	std::cout << "Ð’Ð°Ñˆ ÑÑ‡ÐµÑ‚: " << client.name << ", " << client.number << ", " << client.balans << std::endl;
 
 }
 
