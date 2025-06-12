@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 
 
@@ -9,23 +9,23 @@ protected:
 	std::string name;
 
 public:
-	Figure() : Figure(0, "Фигура") {};
+	Figure() : Figure(0, "Р¤РёРіСѓСЂР°") {};
 	Figure(int sides_count, std::string name)
 	{
 		this->sides_count = sides_count;
 		this->name = name;
 	};
 
-	int getsiget_sides_count() const { return sides_count; } //Метод геттер числа сторон
+	int getsiget_sides_count() const { return sides_count; } //РњРµС‚РѕРґ РіРµС‚С‚РµСЂ С‡РёСЃР»Р° СЃС‚РѕСЂРѕРЅ
 
-	std::string getname() const { return name; } //Метод геттер названия фигуры
+	std::string getname() const { return name; } //РњРµС‚РѕРґ РіРµС‚С‚РµСЂ РЅР°Р·РІР°РЅРёСЏ С„РёРіСѓСЂС‹
 };
 
 class Triangle : public Figure
 {
 public:
 
-	Triangle() : Figure(3, "Треугольник") {};
+	Triangle() : Figure(3, "РўСЂРµСѓРіРѕР»СЊРЅРёРє") {};
 	
 };
 
@@ -33,20 +33,20 @@ class Quadrangle : public Figure
 {
 public:
 
-	Quadrangle() : Figure(4, "Четырехугольник") {};
+	Quadrangle() : Figure(4, "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє") {};
 };
 
-void print(Figure& xFig) //Функция печати названия фигуры и числа сторон
+void print(Figure& xFig) //Р¤СѓРЅРєС†РёСЏ РїРµС‡Р°С‚Рё РЅР°Р·РІР°РЅРёСЏ С„РёРіСѓСЂС‹ Рё С‡РёСЃР»Р° СЃС‚РѕСЂРѕРЅ
 {
 	std::cout << xFig.getname() << ": " << xFig.getsiget_sides_count() << std::endl;
 }
 
 int main()
 {
-	setlocale(LC_ALL, "Russian"); //Корректное отображение Кириллицы
+	setlocale(LC_ALL, "Russian"); //РљРѕСЂСЂРµРєС‚РЅРѕРµ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ РљРёСЂРёР»Р»РёС†С‹
 	
 
-	std::cout << std::endl << "Количество сторон: " << std::endl;
+	std::cout << std::endl << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " << std::endl;
 
 	Figure Figure1;
 	print(Figure1);
