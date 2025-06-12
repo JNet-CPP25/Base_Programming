@@ -1,6 +1,6 @@
-#include <iostream>
+п»ї#include <iostream>
 
-//Калькулятор
+//РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ
 class Calculator
 {
 private:
@@ -65,7 +65,7 @@ public:
     }
 };
 
-//Печать
+//РџРµС‡Р°С‚СЊ
 void printResult(double result)
 {
     std::cout << result << std::endl;
@@ -73,57 +73,57 @@ void printResult(double result)
 
 int main()
 {
-    setlocale(LC_CTYPE, "rus"); //локализация
+    setlocale(LC_CTYPE, "rus"); //Р»РѕРєР°Р»РёР·Р°С†РёСЏ
 
     double num1 = 0;
     double num2 = 0;
 
-    Calculator result; // создаем экземпляр класса 
+    Calculator result; // СЃРѕР·РґР°РµРј СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° 
 
     while (true) 
     {
         
-        do //Проверка num1 на ноль
+        do //РџСЂРѕРІРµСЂРєР° num1 РЅР° РЅРѕР»СЊ
         {
-            std::cout << "Введите num1: ";
+            std::cout << "Р’РІРµРґРёС‚Рµ num1: ";
             std::cin >> num1;
             if (!result.set_num1(num1))
             {
-                std::cout << "Неверный ввод! " << std::endl;
+                std::cout << "РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ! " << std::endl;
             };
         } while (!result.set_num1(num1));
 
-        do //Проверка num2 на ноль
+        do //РџСЂРѕРІРµСЂРєР° num2 РЅР° РЅРѕР»СЊ
         {
-            std::cout << "Введите num2: ";
+            std::cout << "Р’РІРµРґРёС‚Рµ num2: ";
             std::cin >> num2;
             if (!result.set_num2(num2))
             {
-                std::cout << "Неверный ввод! " << std::endl;
+                std::cout << "РќРµРІРµСЂРЅС‹Р№ РІРІРѕРґ! " << std::endl;
             };
         } while (!result.set_num2(num2));
 
-        result.add(); //Сложение
+        result.add(); //РЎР»РѕР¶РµРЅРёРµ
         std::cout << std::endl << "num1 + num2 = "; 
         printResult(result.add()); 
 
-        result.multiply();  //Умножение
+        result.multiply();  //РЈРјРЅРѕР¶РµРЅРёРµ
         std::cout << "num1 * num2 = ";
         printResult(result.multiply());
 
-        result.subtract_1_2();  //Разность 
+        result.subtract_1_2();  //Р Р°Р·РЅРѕСЃС‚СЊ 
         std::cout << "num1 - num2 = ";
         printResult(result.subtract_1_2());
 
-        result.subtract_2_1();  //Разность
+        result.subtract_2_1();  //Р Р°Р·РЅРѕСЃС‚СЊ
         std::cout << "num2 - num1 = ";
         printResult(result.subtract_2_1());
 
-        result.divide_1_2(); //Деление
+        result.divide_1_2(); //Р”РµР»РµРЅРёРµ
         std::cout << "num1 / num2 = ";
         printResult(result.divide_1_2());
 
-        result.divide_2_1(); //Деление
+        result.divide_2_1(); //Р”РµР»РµРЅРёРµ
         std::cout << "num2 / num1 = ";
         printResult(result.divide_2_1());
     }
