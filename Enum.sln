@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesNumberSides", "Shapes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesSidesAngles", "ShapesSidesAngles\ShapesSidesAngles.vcxproj", "{A4943ADC-4412-4724-9F21-A1F0BA49846A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesMetods", "ShapesMetods\ShapesMetods.vcxproj", "{18DB9227-696A-4C3F-A544-152B4367B2A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{A4943ADC-4412-4724-9F21-A1F0BA49846A}.Release|x64.Build.0 = Release|x64
 		{A4943ADC-4412-4724-9F21-A1F0BA49846A}.Release|x86.ActiveCfg = Release|Win32
 		{A4943ADC-4412-4724-9F21-A1F0BA49846A}.Release|x86.Build.0 = Release|Win32
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Debug|x64.ActiveCfg = Debug|x64
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Debug|x64.Build.0 = Debug|x64
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Debug|x86.ActiveCfg = Debug|Win32
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Debug|x86.Build.0 = Debug|Win32
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Release|x64.ActiveCfg = Release|x64
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Release|x64.Build.0 = Release|x64
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Release|x86.ActiveCfg = Release|Win32
+		{18DB9227-696A-4C3F-A544-152B4367B2A8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
