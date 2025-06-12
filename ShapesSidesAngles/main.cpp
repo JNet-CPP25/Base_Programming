@@ -1,11 +1,11 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 
 class Figure
 {
 protected:
 	std::string nameOfFigure;
-	bool haveFourSides = false; //признак что четыре стороны
+	bool haveFourSides = false; //РїСЂРёР·РЅР°Рє С‡С‚Рѕ С‡РµС‚С‹СЂРµ СЃС‚РѕСЂРѕРЅС‹
 	int a = 0;
 	int b = 0;
 	int c = 0;
@@ -34,10 +34,10 @@ public:
 class Triangle : public Figure
 {
 public:
-		//Конструктор треугольника
+		//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
 	Triangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB, int angleC)
 	{
-		nameOfFigure = "Треугольник";
+		nameOfFigure = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
 		a = sideLengthA;
 		b = sideLengthB;
 		c = sideLengthC;
@@ -53,17 +53,17 @@ public:
 	rightTriangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB)
 		: Triangle(sideLengthA, sideLengthB, sideLengthC, angleA, angleB, 90)
 	{
-		Triangle::nameOfFigure = "Прямоугольный треугольник";
+		Triangle::nameOfFigure = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
-class isoscelesTriangle : public Triangle   //равнобедренный треугольник
+class isoscelesTriangle : public Triangle   //СЂР°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 {
 public:
 	isoscelesTriangle(int sideLengthA, int sideLengthB, int angleA, int angleB)
 		: Triangle(sideLengthA, sideLengthB, sideLengthA, angleA, angleB, angleA)
 	{
-		Triangle::nameOfFigure = "Равнобедренный треугольник";
+		Triangle::nameOfFigure = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -73,7 +73,7 @@ public:
 	equilateralTriangle(int sideLengthA)
 		: Triangle(sideLengthA, sideLengthA, sideLengthA, 60, 60, 60)
 	{
-		Triangle::nameOfFigure = "Равносторонний треугольник";
+		Triangle::nameOfFigure = "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -83,7 +83,7 @@ class Quadrilateral : public Figure
 public:
 	Quadrilateral(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 	{
-		nameOfFigure = "Четырехугольник";
+		nameOfFigure = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
 
 		haveFourSides = true;
 
@@ -105,7 +105,7 @@ public: //int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, in
 	Rectangle(int sideLengthA, int sideLengthB)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthA, sideLengthB, 90, 90, 90, 90)
 	{
-		Quadrilateral::nameOfFigure = "Прямоугольник";
+		Quadrilateral::nameOfFigure = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє";
 	}
 };
 
@@ -115,7 +115,7 @@ public:
 	Square(int sideLengthA)
 		: Quadrilateral(sideLengthA, sideLengthA, sideLengthA, sideLengthA, 90, 90, 90, 90)
 	{
-		Quadrilateral::nameOfFigure = "Квадрат";
+		Quadrilateral::nameOfFigure = "РљРІР°РґСЂР°С‚";
 	}
 };
 
@@ -125,7 +125,7 @@ public:
 	Parallelogram(int sideLengthA, int sideLengthB, int angleA, int angleB)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthA, sideLengthB, angleA, angleB, angleA, angleB)
 	{
-		Quadrilateral::nameOfFigure = "Параллелограмм";
+		Quadrilateral::nameOfFigure = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј";
 	}
 };
 
@@ -135,7 +135,7 @@ public:
 	Rhomb(int sideLengthA, int angleA, int angleB)
 		: Quadrilateral(sideLengthA, sideLengthA, sideLengthA, sideLengthA, angleA, angleB, angleA, angleB)
 	{
-		Quadrilateral::nameOfFigure = "Ромб";
+		Quadrilateral::nameOfFigure = "Р РѕРјР±";
 	}
 };
 
@@ -144,23 +144,23 @@ void print_info(Figure& figure)
 	std::cout << std::endl;
 	std::cout << figure.getNameOfFigure() << ":" << std::endl;
 
-	std::cout << "Стороны:";
-	std::cout << " a = " << figure.getSideLengthA() << ", b = " << figure.getSideLengthB() << ", с = " << figure.getSideLengthC();
+	std::cout << "РЎС‚РѕСЂРѕРЅС‹:";
+	std::cout << " a = " << figure.getSideLengthA() << ", b = " << figure.getSideLengthB() << ", СЃ = " << figure.getSideLengthC();
 	if (figure.getHaveFourSides())
 	{
 		std::cout << ", d = " << figure.getSideLengthD() << std::endl;
 	}
 	else { std::cout << std::endl; }
 
-	std::cout << "Углы:";
-	std::cout << " А = " << figure.getAngleA() << ", В = " << figure.getAngleB() << ", С = " << figure.getAngleC();
+	std::cout << "РЈРіР»С‹:";
+	std::cout << " Рђ = " << figure.getAngleA() << ", Р’ = " << figure.getAngleB() << ", РЎ = " << figure.getAngleC();
 	if (figure.getHaveFourSides()) { std::cout << ", D = " << figure.getAngleD() << std::endl; }
 	else { std::cout << std::endl; }
 }
 
 int main()
 {
-	setlocale(LC_ALL, "Russian"); //Корректное отображение Кириллицы
+	setlocale(LC_ALL, "Russian"); //РљРѕСЂСЂРµРєС‚РЅРѕРµ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ РљРёСЂРёР»Р»РёС†С‹
 
 	Triangle Triangle1(10, 20, 30, 40, 50, 60);
 	print_info(Triangle1);
