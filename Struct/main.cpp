@@ -3,7 +3,7 @@
 #include <windows.h>
 
 
-struct bankAccount
+struct BankAccount
 {
 	int number{};
 	std::string name{};
@@ -11,7 +11,7 @@ struct bankAccount
 };
 
 
-bankAccount changeBalans(bankAccount& client, float newBalans);
+BankAccount changeBalans(BankAccount& client, float newBalans);
 
 
 int main()
@@ -22,7 +22,7 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	bankAccount client;
+	BankAccount client;
 	float newBalans{};
 
 	std::cout << "Введите номер счета : ";
@@ -44,7 +44,7 @@ int main()
 
 }
 
-bankAccount changeBalans(bankAccount& client, float newBalans)
+BankAccount changeBalans(BankAccount& client, float newBalans)
 {
 	client.balans = newBalans;
 
