@@ -1,10 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <iostream>#include <string>
 
 class Figure
 {
 protected:
-	std::string nameOfFigure = "Фигура";
+	std::string nameOfFigure = "Р¤РёРіСѓСЂР°";
 	bool checkFigure = false;
 	int quantityOfSides = 0;
 	int sideLengthA = 0;
@@ -16,7 +16,7 @@ protected:
 	int angleC = 0;
 	int angleD = 0;
 
-	virtual bool check() //Виртуальный метод проверки фигуры.Кол-во сторон == 0 
+	virtual bool check() //Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РјРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё С„РёРіСѓСЂС‹.РљРѕР»-РІРѕ СЃС‚РѕСЂРѕРЅ == 0 
 	{
 		if (quantityOfSides == 0)
 		{
@@ -29,7 +29,7 @@ protected:
 	};
 
 public:
-	//Геттеры
+	//Р“РµС‚С‚РµСЂС‹
 	std::string getNameOfFigure() { return nameOfFigure; }
 
 	int getSideLengthA() { return sideLengthA; }
@@ -42,24 +42,24 @@ public:
 	int getAngleC() { return angleC; }
 	int getAngleD() { return angleD; }
 
-	virtual void print_info() //Виртуальный метод печати и проверка правильности фигуры
+	virtual void print_info() //Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РјРµС‚РѕРґ РїРµС‡Р°С‚Рё Рё РїСЂРѕРІРµСЂРєР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚Рё С„РёРіСѓСЂС‹
 	{
 		std::cout << std::endl;
 		std::cout << nameOfFigure << ":" << std::endl;
 		if (check())
 		{
-			std::cout << "Правильная" << std::endl;
+			std::cout << "РџСЂР°РІРёР»СЊРЅР°СЏ" << std::endl;
 		}
-		else { std::cout << "Неправильная" << std::endl; }
+		else { std::cout << "РќРµРїСЂР°РІРёР»СЊРЅР°СЏ" << std::endl; }
 
-		std::cout << "Количество сторон: " << quantityOfSides << std::endl;
+		std::cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " << quantityOfSides << std::endl;
 	}
 };
 
 class Triangle : public Figure
 {
 protected:
-	bool check() override //Переписанный метод проверки на сумма всех углов треуг == 180
+	bool check() override //РџРµСЂРµРїРёСЃР°РЅРЅС‹Р№ РјРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё РЅР° СЃСѓРјРјР° РІСЃРµС… СѓРіР»РѕРІ С‚СЂРµСѓРі == 180
 	{
 		if ((angleA + angleB + angleC) == 180)
 		{
@@ -72,10 +72,10 @@ protected:
 	};
 
 public:
-	//Конструктор треугольника
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
 	Triangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB, int angleC)
 	{
-		nameOfFigure = "Треугольник";
+		nameOfFigure = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
 		this->sideLengthA = sideLengthA;
 		this->sideLengthB = sideLengthB;
 		this->sideLengthC = sideLengthC;
@@ -86,16 +86,16 @@ public:
 		checkFigure = check();
 	}
 
-	void print_info() override //Переписанный метод печати с вызовом базового метода печати
+	void print_info() override //РџРµСЂРµРїРёСЃР°РЅРЅС‹Р№ РјРµС‚РѕРґ РїРµС‡Р°С‚Рё СЃ РІС‹Р·РѕРІРѕРј Р±Р°Р·РѕРІРѕРіРѕ РјРµС‚РѕРґР° РїРµС‡Р°С‚Рё
 	{
 		Figure::print_info();
 
-		std::cout << "Стороны:";
-		std::cout << " a = " << getSideLengthA() << ", b = " << getSideLengthB() << ", с = " << getSideLengthC();
+		std::cout << "РЎС‚РѕСЂРѕРЅС‹:";
+		std::cout << " a = " << getSideLengthA() << ", b = " << getSideLengthB() << ", СЃ = " << getSideLengthC();
 		std::cout << std::endl;
 
-		std::cout << "Углы:";
-		std::cout << " А = " << getAngleA() << ", В = " << getAngleB() << ", С = " << getAngleC();
+		std::cout << "РЈРіР»С‹:";
+		std::cout << " Рђ = " << getAngleA() << ", Р’ = " << getAngleB() << ", РЎ = " << getAngleC();
 		std::cout << std::endl;
 	}
 
@@ -120,7 +120,7 @@ public:
 	rightTriangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB, int angleC)
 		: Triangle(sideLengthA, sideLengthB, sideLengthC, angleA, angleB, angleC)
 	{
-		Triangle::nameOfFigure = "Прямоугольный треугольник";
+		Triangle::nameOfFigure = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -143,7 +143,7 @@ public:
 	isoscelesTriangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB, int angleC)
 		: Triangle(sideLengthA, sideLengthB, sideLengthC, angleA, angleB, angleC)
 	{
-		Triangle::nameOfFigure = "Равнобедренный треугольник";
+		Triangle::nameOfFigure = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -166,7 +166,7 @@ public:
 	equilateralTriangle(int sideLengthA, int sideLengthB, int sideLengthC, int angleA, int angleB, int angleC)
 		: Triangle(sideLengthA, sideLengthB, sideLengthC, angleA, angleB, angleC)
 	{
-		Triangle::nameOfFigure = "Равносторонний треугольник";
+		Triangle::nameOfFigure = "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 protected:
 	bool check() override
@@ -200,7 +200,7 @@ protected:
 		}
 	};
 
-	//Метод проверки "стороны a,c и b,d попарно равны"
+	//РњРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё "СЃС‚РѕСЂРѕРЅС‹ a,c Рё b,d РїРѕРїР°СЂРЅРѕ СЂР°РІРЅС‹"
 	bool metodCheckSideLengthACiBD()
 	{
 		if (sideLengthA == sideLengthC && sideLengthB == sideLengthD)
@@ -213,7 +213,7 @@ protected:
 		}
 	};
 
-	//Метод проверки "все стороны равны"
+	//РњРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё "РІСЃРµ СЃС‚РѕСЂРѕРЅС‹ СЂР°РІРЅС‹"
 	bool metodCheckSideLengthACBD()
 	{
 		if (sideLengthA == sideLengthB && sideLengthB == sideLengthC && sideLengthC == sideLengthD)
@@ -226,7 +226,7 @@ protected:
 		}
 	};
 
-	//Метод проверки "все углы равны 90 градусов"
+	//РњРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё "РІСЃРµ СѓРіР»С‹ СЂР°РІРЅС‹ 90 РіСЂР°РґСѓСЃРѕРІ"
 	bool metodCheckAngleabcd90()
 	{
 		if (angleA == 90 && angleB == 90 && angleC == 90 && angleD == 90)
@@ -239,7 +239,7 @@ protected:
 		}
 	};
 
-	//Метод проверки "углы A,C и B,D попарно равны"
+	//РњРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё "СѓРіР»С‹ A,C Рё B,D РїРѕРїР°СЂРЅРѕ СЂР°РІРЅС‹"
 	bool metodCheckAngleACiBD()
 	{
 		if (angleA == angleC && angleB == angleD)
@@ -255,7 +255,7 @@ protected:
 public:
 	Quadrilateral(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 	{
-		nameOfFigure = "Четырехугольник";
+		nameOfFigure = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
 
 		quantityOfSides = 4;
 		this->sideLengthA = sideLengthA;
@@ -273,12 +273,12 @@ public:
 	{
 		Figure::print_info();
 
-		std::cout << "Стороны:";
-		std::cout << " a = " << getSideLengthA() << ", b = " << getSideLengthB() << ", с = " << getSideLengthC();
+		std::cout << "РЎС‚РѕСЂРѕРЅС‹:";
+		std::cout << " a = " << getSideLengthA() << ", b = " << getSideLengthB() << ", СЃ = " << getSideLengthC();
 		std::cout << ", d = " << getSideLengthD() << std::endl;
 
-		std::cout << "Углы:";
-		std::cout << " А = " << getAngleA() << ", В = " << getAngleB() << ", С = " << getAngleC();
+		std::cout << "РЈРіР»С‹:";
+		std::cout << " Рђ = " << getAngleA() << ", Р’ = " << getAngleB() << ", РЎ = " << getAngleC();
 		std::cout << ", D = " << getAngleD() << std::endl;
 	}
 
@@ -303,7 +303,7 @@ public:
 	Rectangle(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthC, sideLengthD, angleA, angleB, angleC, angleD)
 	{
-		Quadrilateral::nameOfFigure = "Прямоугольник";
+		Quadrilateral::nameOfFigure = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє";
 	}
 };
 
@@ -325,7 +325,7 @@ public:
 	Square(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthC, sideLengthD, angleA, angleB, angleC, angleD)
 	{
-		Quadrilateral::nameOfFigure = "Квадрат";
+		Quadrilateral::nameOfFigure = "РљРІР°РґСЂР°С‚";
 	}
 };
 
@@ -348,7 +348,7 @@ public:
 	Parallelogram(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthC, sideLengthD, angleA, angleB, angleC, angleD)
 	{
-		Quadrilateral::nameOfFigure = "Параллелограмм";
+		Quadrilateral::nameOfFigure = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј";
 	}
 };
 
@@ -371,13 +371,13 @@ public:
 	Rhomb(int sideLengthA, int sideLengthB, int sideLengthC, int sideLengthD, int angleA, int angleB, int angleC, int angleD)
 		: Quadrilateral(sideLengthA, sideLengthB, sideLengthC, sideLengthD, angleA, angleB, angleC, angleD)
 	{
-		Quadrilateral::nameOfFigure = "Ромб";
+		Quadrilateral::nameOfFigure = "Р РѕРјР±";
 	}
 };
 
 int main()
 {
-	setlocale(LC_ALL, "Russian"); //Корректное отображение Кириллицы
+	setlocale(LC_ALL, "Russian"); //РљРѕСЂСЂРµРєС‚РЅРѕРµ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ РљРёСЂРёР»Р»РёС†С‹
 	system("chcp 1251");
 
 	Figure Figure1;
