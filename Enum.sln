@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutputStruct", "OutputStruc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CalcTwoNumber", "CalcTwoNumber\CalcTwoNumber.vcxproj", "{1FA177E7-C0DF-460D-B7AB-763A9DB5666D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Counter", "Counter\Counter.vcxproj", "{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{1FA177E7-C0DF-460D-B7AB-763A9DB5666D}.Release|x64.Build.0 = Release|x64
 		{1FA177E7-C0DF-460D-B7AB-763A9DB5666D}.Release|x86.ActiveCfg = Release|Win32
 		{1FA177E7-C0DF-460D-B7AB-763A9DB5666D}.Release|x86.Build.0 = Release|Win32
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Debug|x64.ActiveCfg = Debug|x64
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Debug|x64.Build.0 = Debug|x64
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Debug|x86.Build.0 = Debug|Win32
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Release|x64.ActiveCfg = Release|x64
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Release|x64.Build.0 = Release|x64
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Release|x86.ActiveCfg = Release|Win32
+		{B5AAC1A8-51BA-4D3F-863B-B7A958A92FE0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
