@@ -1,4 +1,4 @@
-#include "MathFunction.h"
+﻿#include "MathFunction.h"
 #include <cmath>
 
 
