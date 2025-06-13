@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "MathFunction.h"
 
 
@@ -13,20 +13,20 @@ int main()
     std::string nameOfOperation;
     bool checkingValue = false;
 
-    std::cout << "Ââåäèòå ïåðâîå ÷èñëî: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     std::cin >> firstNumber;
 
-    std::cout << "Ââåäèòå âòîðîå ÷èñëî: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     std::cin >> secondNumber;
 
     do
     {
-        std::cout << "Âûáåðèòå îïåðàöèþ (1 - ñëîæåíèå, 2 âû÷èòàíèå, 3 - óìíîæåíèå, 4 - äåëåíèå, 5 - âîçâåäåíèå â ñòåïåíü): ";
+        std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸ÑŽ (1 - ÑÐ»Ð¾Ð¶ÐµÐ½Ð¸Ðµ, 2 Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ, 3 - ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ, 4 - Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ, 5 - Ð²Ð¾Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ Ð² ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ): ";
         std::cin >> operationSelection;
 
         if (operationSelection == 4 && secondNumber == 0)
         {
-            std::cout << " Äåëèòü íà íîëü íåëüçÿ... " << std::endl;
+            std::cout << " Ð”ÐµÐ»Ð¸Ñ‚ÑŒ Ð½Ð° Ð½Ð¾Ð»ÑŒ Ð½ÐµÐ»ÑŒÐ·Ñ... " << std::endl;
         }
         else if (operationSelection <= 5 && operationSelection >= 1)
         {
@@ -34,7 +34,7 @@ int main()
         }
         else
         {
-            std::cout << " Ïëîõîé âûáîð. Âûáåðåòå åùå ðàçîê... " << std::endl;
+            std::cout << " ÐŸÐ»Ð¾Ñ…Ð¾Ð¹ Ð²Ñ‹Ð±Ð¾Ñ€. Ð’Ñ‹Ð±ÐµÑ€ÐµÑ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·Ð¾Ðº... " << std::endl;
         }
     } while (!checkingValue);
 
@@ -42,27 +42,27 @@ int main()
     {
     case(1):
     {
-        nameOfOperation = "ïëþñ";
+        nameOfOperation = "Ð¿Ð»ÑŽÑ";
         break;
     }
     case(2):
     {
-        nameOfOperation = "ìèíóñ";
+        nameOfOperation = "Ð¼Ð¸Ð½ÑƒÑ";
         break;
     }
     case(3):
     {
-        nameOfOperation = "óìíîæèòü";
+        nameOfOperation = "ÑƒÐ¼Ð½Ð¾Ð¶Ð¸Ñ‚ÑŒ";
         break;
     }
     case(4):
     {
-        nameOfOperation = "ðàçäåëèòü";
+        nameOfOperation = "Ñ€Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÑŒ";
         break;
     }
     case(5):
     {
-        nameOfOperation = "â ñòåïåíè";
+        nameOfOperation = "Ð² ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸";
         break;
     }
     };
