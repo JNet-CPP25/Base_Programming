@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesMetods", "ShapesMetod
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingAddress", "SortingAddress\SortingAddress.vcxproj", "{2BC0FD5F-FABD-485C-BDF6-36E497697EB5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathFunction", "MathFunction\MathFunction.vcxproj", "{5B7740AB-9A94-4395-B74A-0523ACFB0520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{2BC0FD5F-FABD-485C-BDF6-36E497697EB5}.Release|x64.Build.0 = Release|x64
 		{2BC0FD5F-FABD-485C-BDF6-36E497697EB5}.Release|x86.ActiveCfg = Release|Win32
 		{2BC0FD5F-FABD-485C-BDF6-36E497697EB5}.Release|x86.Build.0 = Release|Win32
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Debug|x64.ActiveCfg = Debug|x64
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Debug|x64.Build.0 = Debug|x64
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Debug|x86.Build.0 = Debug|Win32
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Release|x64.ActiveCfg = Release|x64
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Release|x64.Build.0 = Release|x64
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Release|x86.ActiveCfg = Release|Win32
+		{5B7740AB-9A94-4395-B74A-0523ACFB0520}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
