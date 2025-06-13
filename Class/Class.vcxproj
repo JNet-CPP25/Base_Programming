@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Class.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Counter.cpp" />
   </ItemGroup>
   <ItemGroup>
