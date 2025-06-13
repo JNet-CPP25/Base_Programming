@@ -1,6 +1,6 @@
-#pragma once
+п»ї#pragma once
 
-class Counter //Создаем класс "Счетчик"
+class Counter //РЎРѕР·РґР°РµРј РєР»Р°СЃСЃ "РЎС‡РµС‚С‡РёРє"
 {
 private:
     int counterResult = 0;
