@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 
 void mergeSortedArr(int* arr, const int arrSize, int* arrLeft, const int arrLeftSize, int* arrRight, const int arrRightSize);
@@ -6,7 +6,7 @@ void mergeSortedArr(int* arr, const int arrSize, int* arrLeft, const int arrLeft
 
 void mergeSort(int* arr, const int sizeArr);
 
-//Функция печати массива
+//Р¤СѓРЅРєС†РёСЏ РїРµС‡Р°С‚Рё РјР°СЃСЃРёРІР°
 void arrPrint(int* arr, const int arrSize)
 {
 	for (int i = 0; i < arrSize; i++)
@@ -28,12 +28,12 @@ int main()
 	int arr[] = { 24, 66, 20, 79, 30, 16, 19, 62, 94, 59, 0, 7, 59, 90, 84, 60, 95, 62 };
 
 
-	std::cout << "Массив до сортировки: \n";
+	std::cout << "РњР°СЃСЃРёРІ РґРѕ СЃРѕСЂС‚РёСЂРѕРІРєРё: \n";
 	arrPrint(arr, std::size(arr));
 
 	mergeSort(arr, std::size(arr));
 
-	std::cout << "Массив после сортировки: \n";
+	std::cout << "РњР°СЃСЃРёРІ РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё: \n";
 	arrPrint(arr, std::size(arr));
 }
 
@@ -77,7 +77,7 @@ void mergeSort(int* arr, const int arrSize)
 	}
 
 
-	int arrLeftSize = arrSize / 2; //разбиваем массив на два подмассива
+	int arrLeftSize = arrSize / 2; //СЂР°Р·Р±РёРІР°РµРј РјР°СЃСЃРёРІ РЅР° РґРІР° РїРѕРґРјР°СЃСЃРёРІР°
 	int arrRightSize = arrSize - (arrSize / 2);
 
 	int* arrLeft = new int[arrLeftSize];
