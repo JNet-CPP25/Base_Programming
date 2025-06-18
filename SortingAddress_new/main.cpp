@@ -4,13 +4,12 @@
 #include <string>
 #include <algorithm>
 
-using namespace std;
 
 class Address //Класс Адрес с методами
 {
 private:
-    string NameCity;
-    string NameStreet;
+   std::string NameCity;
+   std::string NameStreet;
     int NumberHouse = 0;
     int NumberApartment = 0;
 
@@ -18,25 +17,25 @@ public:
     // Конструкторы
     Address() {}
 
-    Address(string NameCity, string NameStreet, int NumberHouse, int NumberApartment)
+    Address(std::string NameCity, std::string NameStreet, int NumberHouse, int NumberApartment)
     {
         fillAddress(NameCity, NameStreet, NumberHouse, NumberApartment);
     }
 
     // Метод получения полного адреса
-    string getFullAddress()
+    std::string getFullAddress()
     {
-        return NameCity + ", " + NameStreet + ", " + to_string(NumberHouse) + ", " + to_string(NumberApartment);
+        return NameCity + ", " + NameStreet + ", " + std::to_string(NumberHouse) + ", " + std::to_string(NumberApartment);
     }
 
     // Метод получения города
-    string getCity()
+    std::string getCity()
     {
         return NameCity;
     }
 
     // Метод заполнения полей объекта класса
-    void fillAddress(string NameCity, string NameStreet, int NumberHouse, int NumberApartment)
+    void fillAddress(std::string NameCity, std::string NameStreet, int NumberHouse, int NumberApartment)
     {
         this->NameCity = NameCity;
         this->NameStreet = NameStreet;
@@ -53,25 +52,25 @@ enum class codeCommit
 //Функция печати массива в файл
 int printArrayForClassObjects(Address* objects, const int count)
 {
-    ofstream fileOut("out.txt", ios_base::trunc);
+    std::ofstream fileOut("out.txt", std::ios_base::trunc);
 
     if (fileOut.is_open())
     {
-        cout << "Файл out.txt успешно открыт." << endl;
+        std::cout << "Файл out.txt успешно открыт." << std::endl;
     }
     else
     {
-        cout << "Ошибка открытия файла out.txt" << endl;
+        std::cout << "Ошибка открытия файла out.txt" << std::endl;
         return static_cast<int>(codeCommit::fileOutOpenError);
     }
 
-    fileOut << "Всего количество адресов: " << count << endl << endl;
+    fileOut << "Всего количество адресов: " << count << std::endl << std::endl;
 
-    fileOut << "Адреса:" << endl;
+    fileOut << "Адреса:" << std::endl;
 
     for (int i = 0; i < count; i++)
     {
-        fileOut << i + 1 << ". " << objects[i].getFullAddress() << endl;
+        fileOut << i + 1 << ". " << objects[i].getFullAddress() << std::endl;
     }
 
     fileOut.close();
@@ -86,26 +85,26 @@ bool compareObjects(Address& a, Address& b) {
 //Функция сортировки
 void addressSort(Address* objects, const int count)
 {
-    sort(objects, objects + count, compareObjects);
+    std::sort(objects, objects + count, compareObjects);
 };
 
 int main() {
     setlocale(LC_ALL, "Russian"); //Корректное отображение Кириллицы
 
-    ifstream fileIn("in.txt"); // Открываем файл и проверяем удалось ли открыть
+    std::ifstream fileIn("in.txt"); // Открываем файл и проверяем удалось ли открыть
     if (!fileIn)
     {
-        cout << "Ошибка открытия файла in.txt." << endl;
+        std::cout << "Ошибка открытия файла in.txt." << std::endl;
         return static_cast<int>(codeCommit::fileInOpenError);
     }
     else
     {
-        cout << "Файл in.txt успешно открыт." << endl;
+        std::cout << "Файл in.txt успешно открыт." << std::endl;
     }
 
     int quantityAddresses = 0;
-    string NameCity = {};
-    string NameStreet = {};
+    std::string NameCity = {};
+    std::string NameStreet = {};
     int NumberHouse = 0;
     int NumberApartment = 0;
 

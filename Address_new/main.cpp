@@ -3,7 +3,6 @@
 #include <fstream>
 #include <string>
 
-//using namespace std;
 
 class Address //Класс Адрес с методами
 {
