@@ -7,28 +7,28 @@
 class Adress //Класс Адрес с методами
 {
 private:
-    std::string NameCity_;
-    std::string NameStreet_;
-    int NumberHouse_ = 0;
-    int NumberApartment_ = 0;
-    std::string FullAdress_;
+    std::string NameCity;
+    std::string NameStreet;
+    int NumberHouse = 0;
+    int NumberApartment = 0;
+    std::string FullAdress;
 
 public:
     // Конструктор
     Adress(std::string NameCity, std::string NameStreet, int NumberHouse, int NumberApartment)
     {
-        NameCity_ = NameCity;
-        NameStreet_ = NameStreet;
-        NumberHouse_ = NumberHouse;
-        NumberApartment_ = NumberApartment;
+        this->NameCity = NameCity;
+        this->NameStreet = NameStreet;
+        this->NumberHouse = NumberHouse;
+        this->NumberApartment = NumberApartment;
     }
 
     // Метод создания строки полного адреса для вывода
     std::string createAdress2Out()
     {
-        FullAdress_ = NameCity_ + ", " + NameStreet_ + ", " + std::to_string(NumberHouse_)
-            + ", " + std::to_string(NumberApartment_);
-        return FullAdress_;
+        FullAdress = NameCity + ", " + NameStreet + ", " + std::to_string(NumberHouse)
+            + ", " + std::to_string(NumberApartment);
+        return FullAdress;
     };
 };
 
