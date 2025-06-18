@@ -124,5 +124,7 @@ int main() {
     addressSort(arr, quantityAddresses);
     printArrayForClassObjects(arr, quantityAddresses);
 
+    std::cout << "Результат работы программы смотри в файле out.txt" << std::endl;
+
     delete[] arr;
 }
