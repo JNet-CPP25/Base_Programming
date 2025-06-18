@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-//#include "quickSort.h"
 
 void quickSort(int* arr, int arrLeft, int arrRight)
 {
