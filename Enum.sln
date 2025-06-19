@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Address_new", "Address_new\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingAddress_new", "SortingAddress_new\SortingAddress_new.vcxproj", "{F56A4020-0A33-470A-A025-E49704B8A6BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algoritmica_2.2", "Algoritmica_2.2\Algoritmica_2.2.vcxproj", "{6D285FD0-3094-4951-B75C-1EA72EF70625}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{F56A4020-0A33-470A-A025-E49704B8A6BE}.Release|x64.Build.0 = Release|x64
 		{F56A4020-0A33-470A-A025-E49704B8A6BE}.Release|x86.ActiveCfg = Release|Win32
 		{F56A4020-0A33-470A-A025-E49704B8A6BE}.Release|x86.Build.0 = Release|Win32
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Debug|x64.ActiveCfg = Debug|x64
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Debug|x64.Build.0 = Debug|x64
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Debug|x86.Build.0 = Debug|Win32
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Release|x64.ActiveCfg = Release|x64
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Release|x64.Build.0 = Release|x64
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Release|x86.ActiveCfg = Release|Win32
+		{6D285FD0-3094-4951-B75C-1EA72EF70625}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
