@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 
 int fooFib(int num)
@@ -12,15 +12,15 @@ int fooFib(int num)
 
 int main(int argc, char** argv)
 {
-    setlocale(LC_ALL, "Russian"); //Корректное отображение Кириллицы
+    setlocale(LC_ALL, "Russian"); //РљРѕСЂСЂРµРєС‚РЅРѕРµ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ РљРёСЂРёР»Р»РёС†С‹
     system("chcp 1251");
 
 
     int num = 0;
-    std::cout << "Введите число: ";
+    std::cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
     std::cin >> num;
-    std::cout << std::endl << "Числа Фибоначчи: \n";
+    std::cout << std::endl << "Р§РёСЃР»Р° Р¤РёР±РѕРЅР°С‡С‡Рё: \n";
 
-    // Выводим число Фибоначчи
+    // Р’С‹РІРѕРґРёРј С‡РёСЃР»Рѕ Р¤РёР±РѕРЅР°С‡С‡Рё
     std::cout << fooFib(num) << std::endl;
 }
