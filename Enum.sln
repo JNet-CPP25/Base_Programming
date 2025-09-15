@@ -53,6 +53,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algoritmica_5.1", "Algoritm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algoritmica_5.2", "Algoritmica_5.2\Algoritmica_5.2.vcxproj", "{B543CC52-38FC-4CFC-8A57-F9E2E8C41ACB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PostgreSQL_cpp", "PostgreSQL_cpp\PostgreSQL_cpp.vcxproj", "{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PPcpp_1_PodCapotom", "PPcpp_1_PodCapotom\PPcpp_1_PodCapotom.vcxproj", "{ECC872CF-5914-46AA-B951-8F203BD0F86C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +265,22 @@ Global
 		{B543CC52-38FC-4CFC-8A57-F9E2E8C41ACB}.Release|x64.Build.0 = Release|x64
 		{B543CC52-38FC-4CFC-8A57-F9E2E8C41ACB}.Release|x86.ActiveCfg = Release|Win32
 		{B543CC52-38FC-4CFC-8A57-F9E2E8C41ACB}.Release|x86.Build.0 = Release|Win32
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Debug|x64.ActiveCfg = Debug|x64
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Debug|x64.Build.0 = Debug|x64
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Debug|x86.Build.0 = Debug|Win32
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Release|x64.ActiveCfg = Release|x64
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Release|x64.Build.0 = Release|x64
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Release|x86.ActiveCfg = Release|Win32
+		{2BA61C5E-D1AC-4A2A-BFEC-6BCD0EC0E0B8}.Release|x86.Build.0 = Release|Win32
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Debug|x64.ActiveCfg = Debug|x64
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Debug|x64.Build.0 = Debug|x64
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Debug|x86.ActiveCfg = Debug|Win32
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Debug|x86.Build.0 = Debug|Win32
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Release|x64.ActiveCfg = Release|x64
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Release|x64.Build.0 = Release|x64
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Release|x86.ActiveCfg = Release|Win32
+		{ECC872CF-5914-46AA-B951-8F203BD0F86C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
